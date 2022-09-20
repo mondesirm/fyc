@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Extension</title>
+</head>
+<body>
+	<h1>My First Web Extension</h1>
+	<p>Here is some text.</p>
+	To create a web extension, you need to have a valid HTML file. The extension’s HTML file is the only file that is required in a web extension. The HTML file can be named anything you want, but it must have the .html extension. The name of the HTML file is not important, but it must be referenced in the manifest file.
+	
+	The manifest file is a JSON file that contains information about the extension. It is the only required file in a web extension. The manifest file must be named manifest.json and must be in the root directory of the extension. The manifest file is used to define the extension’s name, version, and permissions.
+	
+	For more information about the manifest file, see the manifest reference.
+	
+	The manifest file defines the extension’s name, version, and permissions. The following example shows a simple manifest file.
+</body>
+</html>
+
+
+{ 
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "This is an example extension",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
+
+The browser_action property defines the extension’s icon and popup. The default_icon property is the path to the icon file. The default_popup property is the path to the popup file.
+
+The following example shows a simple HTML file.
+
+<!DOCTYPE html>
+<!-- Path: popup.html -->
+<html>
+<head>
+	<title>Popup</title>
+</head>
+<body>
+	<h1>My First Web Extension</h1>
+	<p>Here is some text.</p>
+</body>
+</html>
+
+The following example shows a simple icon file.
+
+The icon file is an image file that is used for the extension’s icon. The icon file can be named anything you want, but it must have the .png extension. The name of the icon file is not important, but it must be referenced in the manifest file.
+
+The following example shows a simple icon file.
+
+The icon file is an image file that is used for the extension’s icon. The icon file can be named anything you want, but it must have the .png extension. The name of the icon file is not important, but it must be
