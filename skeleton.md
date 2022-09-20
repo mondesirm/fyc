@@ -216,4 +216,19 @@ Sachant que la disposition des éléments dans Firefox est très personnalisable
     - Pages d'extension : des pages créées généralement de manière procédurale via `windows.create()` ou `tabs.create()` qui sont non catégorisées et donc non spécifiées dans le Manifest mais sans différences pour les accès aux APIs.
     - Ressources Web : fichiers multi médias, scripts, feuilles de styles...
 
+## Chromium & Firefox : Les APIs
+
 ## TP 1
+Nous allons mettre en pratique ce que nous avons vu en créant une extension pour Firefox.
+
+Pourquoi Firefox ? Dans le cadre de cette activité, il est plus facile de développer une extension pour Firefox car il n'y a pas besoin de signer l'extension pour la tester. Il suffit de l'installer en mode développeur. Code on the fly !
+
+L'extension devra permettre à l'utilisateur, via un bouton sur la barre d'outils, de mettre en surbrillance les éléments de la page Web lorsque la souris survole la page Web. Il s'agit en principe de modifier la propriété `border` de l'élément survolé.
+
+Créer un dossier `highlight` dans lequel vous allez effectuer les commandes suivantes :
+- `touch manifest.json` : créer le fichier Manifest.
+- `mkdir icons/` : des icônes pour mieux discerner votre extension dans le gestionnaire d'extensions.
+
+Rappel : l'API `browserAction` permet d'ajouter un bouton sur la barre d'outils.
+
+Pour le reste, à vous de jouer !
